@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="login-container">
+    <div class="login-box">
+        <h1 class="login-title">Iniciar Sesión</h1>
+        
+        {% if error %}
+            <div class="alert alert-danger" role="alert">
+                {{ error }}
+            </div>
+        {% endif %}
+        
+        <form action="{% url 'signin' %}" method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-group">
+                    <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                    {{ field }}
+                </div>
+            {% endfor %}
+            <button type="submit" class="btn-primary">Iniciar Sesión</button>
+        </form>  
+        <p class="signup-link">¿No tienes una cuenta? <a href="{% url 'signup' %}">Regístrate</a></p>
+    </div>
+</div>
+{% endblock %}

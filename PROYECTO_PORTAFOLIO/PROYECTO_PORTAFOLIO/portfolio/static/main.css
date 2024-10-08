@@ -1,0 +1,142 @@
+body {
+  background: #090909;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.card-project:hover {
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+.custom-image {
+  width: 150px;
+  height: auto;
+  padding-top: 35px;
+}
+
+.image-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h1.fs-1 {
+  font-size: 3.0rem;
+  margin-top: 30px;
+}
+
+h3.fs-3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Login and Registration Styles */
+.login-container,
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-box,
+.signup-box {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title,
+.signup-title {
+  color: #fdfffe;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #eee;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #222;
+  color: #eee;
+}
+
+/* Specific styles for login and signup buttons */
+.login-box .btn-primary,
+.signup-box .btn-primary {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-box .btn-primary:hover,
+.signup-box .btn-primary:hover {
+  background-color: #007bff;
+}
+
+.signup-link,
+.signin-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+}
+
+.signup-link a,
+.signin-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.alert-danger {
+  background-color: #ff4444;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the CV download button */
+.btn-primary.btn-lg.rounded-custom {
+  /* Add your specific styles here */
+  /* For example: */
+  background-color: #007bff;
+  border-color: #007bff;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-primary.btn-lg.rounded-custom:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
